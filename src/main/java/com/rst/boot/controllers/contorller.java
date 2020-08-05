@@ -21,6 +21,11 @@ public class contorller {
 	public List<UserModel> hello() {
 		return userServices.findAllUsers();
 	}
+
+	@GetMapping("/get")
+	public List<UserModel> helloman() {
+		return userServices.findAllUsers();
+	}
 	
 	@PostMapping("/add")
 	public String addUser(@RequestBody UserModel userdata) {
